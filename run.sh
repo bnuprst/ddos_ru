@@ -1,0 +1,1 @@
+python3 ./ddos_ru.py

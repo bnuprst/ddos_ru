@@ -1,0 +1,14 @@
+#http://marketplace.vtb.ru
+#https://marketplace.vtb.ru
+#http://marketplace.vtb.ru:3000
+#http://marketplace.vtb.ru:5000
+#http://marketplace.vtb.ru:8000
+#http://marketplace.vtb.ru:8090
+#http://marketplace.vtb.ru:9010
+#http://marketplace.vtb.ru:9090
+http://5.61.23.11:80
+http://217.20.155.13:80
+http://217.20.147.1:80
+https://5.61.23.11:443
+https://217.20.155.13:443
+https://217.20.147.1:443
