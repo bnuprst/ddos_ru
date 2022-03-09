@@ -8,6 +8,7 @@ headers = {
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
     "Accept-Encoding": "gzip, deflate, br",
     "Accept-Language": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3",
+    "Referer": "https://www.google.com/",
     "Cache-Control": "max-age=0",
     'Connection': 'keep-alive',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0',
@@ -17,8 +18,8 @@ headers = {
 def ping(site_url: str):
     try:
         response = requests.get(site_url, headers=headers)
-        if response.status_code == 200:
-            print(f"UP   \t\t: {site_url} ")
+        if response.status_code in range(200, 400):
+            print(f"UP   {response.status_code} \t: {site_url} ")
         elif response.status_code >= 500:
             print(f"DOWN {response.status_code} \t: {site_url} ")
         else:
