@@ -16,7 +16,7 @@ def ping_udp(host_ip: str, port: int):
             received = str(sock.recv(1024), "utf-16")
             print(f"{host_ip}:{port} Received: {received} ")
     except Exception as e:
-        print(f"{host_ip}:{port}  {str(e)} ")
+        print(f"{host_ip}:{port}  {type(e)}: {str(e)} ")
 
     # print(f"Sent:     {data} to {host_ip}:{port}")
 
@@ -33,7 +33,7 @@ def ping_tcp(host_ip: str, port: int):
             received = str(sock.recv(1024), "utf-8")
             print(f"{host_ip}:{port}    Received: {received} ")
     except Exception as e:
-        print(f"{host_ip}:{port}  {str(e)} ")
+        print(f"{host_ip}:{port}  {type(e)}: {str(e)} ")
 
     # print(f"Sent:     {data} to {host_ip}:{port}")
 
