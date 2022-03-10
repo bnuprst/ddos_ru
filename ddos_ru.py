@@ -48,7 +48,7 @@ if __name__ == '__main__':
         except IOError:
             print("Failed to read sites list ")
     start = time.time()
-    with ThreadPoolExecutor(max_workers=1_000) as executor:
+    with ThreadPoolExecutor(max_workers=200) as executor:
         while True:
             for url in sites:
                 executor.submit(lambda: ping_times(url, 50))
