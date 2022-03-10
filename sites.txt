@@ -1,5 +1,6 @@
-https://ds1.mirconnect.ru/sc1/authreq
-https://ds1.mirconnect.ru/vbv/pareq
-https://ds2.mirconnect.ru/sc1/authreq
-https://ds2.mirconnect.ru/vbv/pareq
-https://acs.vendorcert.mirconnect.ru/mdpayacs/vereq
+https://www.russianhighways.ru
+https://www.nornickel.com
+https://www.surgutneftegas.ru
+https://www.evraz.com
+https://www.nlmk.com
+https://www.metalloinvest.com
